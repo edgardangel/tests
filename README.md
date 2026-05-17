@@ -1,4 +1,4 @@
-# Simulador de Gestor de Procesos y Sincronización de Sistemas Operativos
+# Simulador de gestor de procesos para Sistemas Operativos
 
 Un simulador interactivo y didáctico desarrollado en Python que modela en tiempo real la planificación de CPU (FCFS, SJF, RR y Prioridades), el control de recursos (memoria RAM limitada) y la sincronización de procesos colaboradores mediante memoria compartida, semáforos y mutex.
 
