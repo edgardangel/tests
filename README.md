@@ -1,23 +1,22 @@
-# [Nombre del Proyecto: Simulador de Gestor de Procesos]
+# Simulador de Gestor de Procesos y Sincronización de Sistemas Operativos
 
-[Escribe aquí una breve descripción del proyecto en 1 o 2 líneas. Ejemplo: Un simulador educativo y de alto rendimiento que modela la planificación de procesos, asignación de memoria RAM y concurrencia con semáforos en sistemas operativos.]
+Un simulador interactivo y didáctico desarrollado en Python que modela en tiempo real la planificación de CPU (FCFS, SJF, RR y Prioridades), el control de recursos (memoria RAM limitada) y la sincronización de procesos colaboradores mediante memoria compartida, semáforos y mutex.
 
 ---
 
 ## 📚 Información del Curso
 
 * **Materia:** Sistemas Operativos
-* **Institución:** [Nombre de tu Universidad o Institución]
-* **Semestre:** [Ejemplo: Sexto Semestre - 2026]
-* **Profesor(es):** [Nombre del Profesor o Profesores]
+* **Institución:** Universidad Autónoma de Tamaulipas, Facultad de Ingeniería Tampico
+* **Semestre:** Semestre 2026-1
+* **Profesor:** Muñoz Quintero Dante Adolfo
 
 ---
 
 ## 👥 Integrantes del Equipo
 
-* **Integrante 1:** [Tu Nombre completo] - [Matrícula/ID]
-* **Integrante 2:** [Nombre completo] - [Matrícula/ID]
-* **Integrante 3:** [Nombre completo] - [Matrícula/ID]
+* **Del Angel Del Angel Edgar**
+* **Hipolito Perez Silvestre Abraham**
 
 ---
 
