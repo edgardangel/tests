@@ -55,35 +55,50 @@ python src/main.py
 
 ## 📂 Estructura del Proyecto
 
-El repositorio está estructurado siguiendo la propuesta de arquitectura académica para la materia de Sistemas Operativos:
+El repositorio está estructurado siguiendo la propuesta de arquitectura académica para la materia de Sistemas Operativos, traducida y optimizada a Python:
 
 ```text
 simulador-gestor-procesos/
-├── README.md               # Este archivo de documentación
-├── LICENSE                 # Licencia de uso del software (MIT)
-├── requirements.txt        # Dependencias de Python
-├── .gitignore              # Archivos excluidos de git
-├── src/                    # Código fuente
-│   ├── main.py             # Punto de entrada
-│   ├── core/               # Núcleo del Sistema Operativo
-│   │   ├── process.py      # Estructura del PCB y estados de procesos
-│   │   ├── scheduler.py    # Algoritmos de Planificación (FCFS, SJF, RR, Prioridad)
-│   │   ├── resource.py     # Gestor de recursos (CPU, memoria RAM)
-│   │   └── generator.py    # Generador automático de procesos
-│   ├── ipc/                # Comunicación entre procesos (IPC)
-│   │   ├── semaphore.py    # Abstracción de Semáforos y Mutex
-│   │   ├── channel.py      # Memoria Compartida / Buffer
-│   │   └── conflict_simulation.py # Simulación Productor-Consumidor (Sincronizado vs Inseguro)
-│   └── ui/                 # Interfaz de Usuario
-│       ├── gui.py          # Dashboard Gráfico Premium (CustomTkinter)
-│       └── logger.py       # Bitácora / Consola del sistema
-├── tests/                  # Pruebas de integración unitarias
-│   ├── scheduler_tests.py  # Tests de los planificadores
-│   ├── resource_tests.py   # Tests del administrador de recursos
-│   └── ipc_tests.py        # Tests del flujo sincronizado de IPC
-├── examples/               # Casos de uso demostrativos y scripts
-│   ├── productor_consumidor.py
-│   └── round_robin_demo.py
-├── docs/                   # Documentación adicional y PDFs
-└── capturas/               # Capturas de pantalla de la aplicación
+├── .github/
+│   └── workflows/
+│       └── python-app.yml     # Pipeline de Integración Continua (CI/CD)
+├── benches/
+│   └── scheduler_bench.py      # Benchmark automatizado de rendimiento de algoritmos
+├── capturas/                   # Screenshots del simulador (ejecución y concurrencia)
+│   ├── .gitkeep
+│   └── *.png                   # 9 Capturas de pantalla de demostración
+├── docs/                       # Manuales y documentación académica
+│   ├── .gitkeep
+│   ├── reporte_tecnico_completo.md # Borrador de manual en Markdown con normas APA
+│   └── Entregable_proyecto_gestor_procesos.pdf # Entregable oficial del proyecto
+├── examples/                   # Casos de uso demostrativos y scripts CLI
+│   ├── productor_consumidor.py # Demostración simple Productor-Consumidor
+│   └── round_robin_demo.py     # Demostración CLI interactiva de Round Robin
+├── src/                        # Código fuente principal de la aplicación
+│   ├── __init__.py             # Inicializador de paquete de src
+│   ├── main.py                 # Punto de entrada ejecutable
+│   ├── core/                   # Núcleo del Sistema Operativo simulado
+│   │   ├── __init__.py
+│   │   ├── generator.py        # Generador de procesos en caliente y por lotes
+│   │   ├── process.py          # Bloque de Control de Procesos (PCB) y transiciones
+│   │   ├── resource.py         # Pool de memoria RAM física con exclusión mutua
+│   │   └── scheduler.py        # Estrategias FCFS, SJF, Prioridades y Round Robin
+│   ├── ipc/                    # Mecanismos de comunicación interprocesos
+│   │   ├── __init__.py
+│   │   ├── channel.py          # Canal de memoria compartida para mensajes (buffer circular)
+│   │   ├── conflict_simulation.py # Simulación multihilo (Modo Seguro vs Inseguro)
+│   │   └── semaphore.py        # Primitivas didácticas de Semáforos y Mutex
+│   └── ui/                     # Componentes de visualización gráfica
+│       ├── __init__.py
+│       ├── gui.py              # Interfaz gráfica moderna en CustomTkinter
+│       └── logger.py           # Bitácora thread-safe e intermediario asíncrono
+├── tests/                      # Batería de pruebas de integración unitarias
+│   ├── __init__.py
+│   ├── ipc_tests.py            # Validación de semáforos, mutex y colisiones
+│   ├── resource_tests.py       # Validación de exclusión mutua y límites de RAM
+│   └── scheduler_tests.py      # Validación del ordenamiento y quantum de despachadores
+├── .gitignore                  # Patrones de exclusión profesionales de Git para Python
+├── LICENSE                     # Licencia académica MIT
+├── README.md                   # Este manual y documentación del proyecto
+└── requirements.txt            # Dependencias del proyecto (CustomTkinter)
 ```
