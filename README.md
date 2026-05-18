@@ -7,7 +7,7 @@ Un simulador interactivo y didáctico desarrollado en Python que modela en tiemp
 ## 📚 Información del Curso
 
 * **Materia:** Sistemas Operativos
-* **Institución:** Universidad Autónoma de Tamaulipas, Facultad de Ingeniería Tampico
+* **Institución:** Universidad Autónoma de Tamaulipas
 * **Semestre:** Semestre 2026-1
 * **Profesor:** Muñoz Quintero Dante Adolfo
 
@@ -26,7 +26,7 @@ Este simulador está desarrollado en **Python 3** utilizando la librería gráfi
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/[tu-usuario]/simulador-gestor-procesos.git
+git clone https://github.com/edgardangel/simulador-gestor-procesos.git
 cd simulador-gestor-procesos
 ```
 
