@@ -69,7 +69,6 @@ simulador-gestor-procesos/
 │   └── *.png                   # 9 Capturas de pantalla de demostración
 ├── docs/                       # Manuales y documentación académica
 │   ├── .gitkeep
-│   ├── reporte_tecnico_completo.md # Borrador de manual en Markdown con normas APA
 │   └── Entregable_proyecto_gestor_procesos.pdf # Entregable oficial del proyecto
 ├── examples/                   # Casos de uso demostrativos y scripts CLI
 │   ├── productor_consumidor.py # Demostración simple Productor-Consumidor
